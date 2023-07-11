@@ -7,8 +7,6 @@ import Link from 'next/link';
 import Logo from '~/components/atoms/Logo';
 import ToggleMenu from '../atoms/ToggleMenu';
 import { headerData } from '~/shared/data';
-import CTA from '../common/CTA';
-import CallToAction from './CallToAction';
 
 const Header = () => {
   const { links, actions, isSticky, showToggleTheme, showRssFeed, position } = headerData;
@@ -55,7 +53,7 @@ const Header = () => {
       }`}
       id="header"
     >
-      <div className="mx-auto w-full max-w-7xl py-3 px-3 md:flex md:justify-between md:py-3.5 md:px-4">
+      <div className="mx-auto w-full max-w-7xl px-3 py-3 md:flex md:justify-between md:px-4 md:py-3.5">
         <div className="flex justify-between">
           <Link
             className="flex items-center"
@@ -96,7 +94,7 @@ const Header = () => {
                         {links.map(({ label: label2, href: href2 }, index2) => (
                           <li key={`item-link-${index2}`}>
                             <Link
-                              className="whitespace-no-wrap block py-2 px-5 first:rounded-t last:rounded-b dark:hover:bg-gray-700 md:hover:bg-gray-200"
+                              className="whitespace-no-wrap block px-5 py-2 first:rounded-t last:rounded-b dark:hover:bg-gray-700 md:hover:bg-gray-200"
                               href={href2 as string}
                               onClick={() =>
                                 isToggleMenuOpen ? handleToggleMenuOnClick() : handleCloseDropdownOnClick(index)
@@ -136,17 +134,6 @@ const Header = () => {
               >
                 <IconRss className="h-5 w-5" />
               </Link>
-            )}
-            {actions && actions.length > 0 && (
-              <div className="ml-4 flex w-max flex-wrap justify-end">
-                {actions.map((callToAction, index) => (
-                  <CTA
-                    key={`item-action-${index}`}
-                    data={callToAction as CallToAction}
-                    class="m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
-                  />
-                ))}
-              </div>
             )}
           </div>
         </div>
