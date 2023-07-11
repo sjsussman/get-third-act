@@ -1,11 +1,9 @@
 import { FeaturesProps } from '~/shared/types';
 import HeaderWidget from '../common/HeaderWidget';
-// import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
-// const FeaturesCarouselWithNoSSR = dynamic(() => import('../widgets/FeaturesCarousel'), { ssr: false }) as any;
-
-const Features3 = ({ header, items, image }: FeaturesProps) => (
+//ABOUT US HOMEPAGE SECTION
+const AboutUsHomepage = ({ header, items, image }: FeaturesProps) => (
   <section className="mx-auto scroll-mt-16" id="features3">
     <div className="mx-auto w-[100%] md:w-[40%]">
       {image && <Image src={image?.src} alt={image?.alt} unoptimized={true} />}
@@ -32,4 +30,4 @@ const Features3 = ({ header, items, image }: FeaturesProps) => (
   </section>
 );
 
-export default Features3;
+export default AboutUsHomepage;

@@ -3,6 +3,7 @@ import Form from '../common/Form';
 import HeaderWidget from '../common/HeaderWidget';
 import Image from 'next/image';
 
+//CONTACT PAGE CONTACT FORM + IMAGE
 const Contact2 = () => {
   const { header, form, image } = contact2Data;
 

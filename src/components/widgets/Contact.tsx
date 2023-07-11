@@ -2,6 +2,7 @@ import { contactData } from '~/shared/data';
 import Form from '../common/Form';
 import HeaderWidget from '../common/HeaderWidget';
 
+//HOMEPAGE CONTACT FORM
 const Contact = () => {
   const { header, content, items, form } = contactData;
 

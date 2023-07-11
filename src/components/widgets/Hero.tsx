@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
 
+//LANDING SECTION - HOMEPAGE
 const Hero = (props: { data: HeroProps }) => {
   const { title, subtitle, callToAction, image } = props.data;
 

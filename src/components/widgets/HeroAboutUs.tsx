@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
-import CTA from '../common/CTA';
 
+//ABOUT US PAGE - INTRO SECTION
 const HeroAboutUs = (props: { data: HeroProps }) => {
   const { title, subtitle, subtitle2 } = props.data;
 

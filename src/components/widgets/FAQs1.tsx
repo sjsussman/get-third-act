@@ -8,6 +8,7 @@ import { useState } from 'react';
 import useWindowSize from '~/hooks/useWindowSize';
 import Dropdown from '../common/Dropdown';
 
+//SERVICES PAGE - FAQ DROP DOWN SECTION
 const FAQs1 = ({ header, tabs }: FAQsProps) => {
   const { width } = useWindowSize();
   const [activeTab, setActiveTab] = useState(0);

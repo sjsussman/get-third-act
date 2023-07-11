@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { IconKey } from '@tabler/icons-react';
-
 import { ServiceProps } from '~/shared/types';
 import HeaderWidget from '../common/HeaderWidget';
 
+//SERVICE SECTION ON HOMEPAGE
 const Service = ({ header, content, items, image, isReversed, isAfterContent }: ServiceProps) => (
   <section className="bg-primary-50 dark:bg-slate-800">
     <div

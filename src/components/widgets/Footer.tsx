@@ -1,5 +1,6 @@
 import { footerData } from '~/shared/data';
 
+//FOOTER SECTION - ALL PAGES
 const Footer2 = () => {
   const { columns, socials } = footerData;
 

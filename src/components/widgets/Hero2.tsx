@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
-import CTA from '../common/CTA';
 
+//ABOUT US PAGE - JON + JESSE PHOTOS AND DESCRIPTION
 const Hero2 = (props: { data: HeroProps }) => {
-  const { title, subtitle, callToAction, callToAction2, jesseImage, jonImage, jesseTitle, subtitle2, jonTitle } =
-    props.data;
+  const { title, subtitle, jesseImage, jonImage, jesseTitle, subtitle2, jonTitle } = props.data;
 
   return (
     <section className="mt-[-72px] dark:bg-slate-800" id="heroTwo">

@@ -1,12 +1,4 @@
-import {
-  IconBrandFacebook,
-  IconBrandLinkedin,
-  IconBrandTailwind,
-  IconHeadset,
-  IconHelp,
-  IconMessages,
-  IconPhoneCall,
-} from '@tabler/icons-react';
+import { IconBrandFacebook, IconBrandLinkedin, IconBrandTailwind, IconPhoneCall } from '@tabler/icons-react';
 import { ContactProps, ServiceProps, FAQsProps, FeaturesProps, FooterProps, HeaderProps, HeroProps } from './types';
 
 import heroImg from '~/assets/images/third-act/hero-images/hero-image-1.jpg';
@@ -317,7 +309,7 @@ export const faqs1Data: FAQsProps = {
 };
 
 // Feature data
-export const featuresData: FeaturesProps = {
+export const aboutUsHomepageData: FeaturesProps = {
   header: {
     title: <>About Us</>,
     subtitle: 'Third Act exists to simplify these challenges for small business owners.',
