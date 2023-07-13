@@ -23,7 +23,7 @@ const Hero = (props: { data: HeroProps }) => {
                 <p>
                   We quickly clarify your goals, giving you the clear perspective, expertise, and tools to achive them.
                 </p>
-                <p>Maximize your company's financial potential with Third Act.</p>
+                <p>Maximize your company&apos;s financial potential with Third Act.</p>
                 <div className="flex-col flex-nowrap gap-4 px-32 sm:flex-row sm:justify-center">
                   {callToAction && <CTA data={callToAction} />}
                 </div>
