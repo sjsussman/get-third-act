@@ -89,6 +89,7 @@ interface Image {
 interface Item {
   title: string | boolean | number;
   description?: string | Array<string>;
+  description2?: string | Array<string>;
   href?: string;
   form?: SmallForm;
   icon?: Function;
@@ -196,6 +197,7 @@ interface FeaturesProps {
   header?: Header;
   items: Array<Item>;
   image?: Image;
+  callToAction?: CallToAction;
 }
 
 interface ServiceProps {
@@ -206,6 +208,7 @@ interface ServiceProps {
   video?: Video;
   isReversed?: boolean;
   isAfterContent?: boolean;
+  callToAction?: CallToAction;
 }
 
 interface StepsProps {
@@ -240,6 +243,7 @@ interface StatsProps {
 
 interface ContactProps {
   header?: Header;
+  header2?: Header;
   content?: string;
   items: Array<Item>;
   form: FormProps;

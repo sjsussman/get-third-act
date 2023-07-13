@@ -4,15 +4,18 @@ import HeaderWidget from '../common/HeaderWidget';
 
 //HOMEPAGE CONTACT FORM
 const Contact = () => {
-  const { header, content, items, form } = contactData;
+  const { header, header2, content, items, form } = contactData;
 
   return (
     <section className="bg-primary-50 text-slate-800" id="contact">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        {header && <HeaderWidget header={header} titleClassname="text-3xl sm:text-5xl" />}
         <div className="flex items-stretch justify-center">
           <div className="grid md:grid-cols-2">
-            <div className="mt-10 h-full pr-6">
+            <div className="mt-[20%] h-full pr-6">
+              <div className="align-start flex-col">
+                {header && <HeaderWidget header={header} titleClassname="text-3xl sm:text-5xl" />}
+                {header2 && <HeaderWidget header={header2} titleClassname="text-3xl sm:text-5xl" />}
+              </div>
               {content && <p className="mb-12 mt-3 text-lg text-gray-600 dark:text-slate-400">{content}</p>}
               <ul className="my-auto mb-6 mt-10 md:mb-0">
                 {items.map(({ title, description, icon: Icon }, index) => (

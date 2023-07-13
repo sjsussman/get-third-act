@@ -9,7 +9,7 @@ const HeaderWidget = ({ header, titleClassname }: HeaderWidgetProps) => {
         <div
           className={`mb-6 max-w-3xl text-center ${
             position === 'left' ? 'sm:text-left' : position === 'right' ? 'sm:text-right' : 'sm:text-center'
-          } md:mx-auto md:mb-12`}
+          } md:mx-auto`}
         >
           {highlight && (
             <p className="text-base font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-200">

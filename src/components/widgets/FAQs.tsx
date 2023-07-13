@@ -2,6 +2,7 @@
 
 import HeaderWidget from '../common/HeaderWidget';
 import Collapse from '../common/Collapse';
+import NoCollapse from '~/components/common/NoCollapse';
 import { IconMinus, IconPlus } from '@tabler/icons-react';
 import { FAQsProps, Item, Tab } from '~/shared/types';
 import { useState } from 'react';
@@ -69,7 +70,31 @@ const FAQs = ({ header, tabs }: FAQsProps) => {
             <div className="mt-4 h-fit md:col-span-2 md:mx-4 md:mt-0 md:px-4">
               {(tabs as Tab[]).map((tab, index) => (
                 <div key={`tab-${index}`} className="">
-                  {activeTab === index && (
+                  {activeTab === index && activeTab !== 3 && (
+                    <NoCollapse
+                      items={tab.items as Item[]}
+                      classCollapseItem="border-b border-solid border-slate-300 dark:border-slate-500 py-5"
+                      iconUp={
+                        <IconMinus
+                          className={
+                            hideToggle
+                              ? 'hidden h-6 w-6 text-primary-600 dark:text-slate-200'
+                              : 'h-6 w-6 text-primary-600 dark:text-slate-200'
+                          }
+                        />
+                      }
+                      iconDown={
+                        <IconPlus
+                          className={
+                            hideToggle
+                              ? 'hidden h-6 w-6 text-primary-600 dark:text-slate-200'
+                              : 'h-6 w-6 text-primary-600 dark:text-slate-200'
+                          }
+                        />
+                      }
+                    />
+                  )}
+                  {activeTab === index && activeTab === 3 && (
                     <Collapse
                       items={tab.items as Item[]}
                       classCollapseItem="border-b border-solid border-slate-300 dark:border-slate-500 py-5"
