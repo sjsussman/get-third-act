@@ -265,18 +265,21 @@ export const faqs1Data: FAQsProps = {
     {
       items: [
         {
+          title: 'Why should we hire Third Act?',
+          description: `Third Act understands that as a business owner, you're faced with a unique set of challenges that can feel overwhelming.
+          We empathize with this struggle and are committed to providing owners with a fresh perspective and expert insights to navigate these difficult times. Our cross-category experience, honed over decades, and our deep understanding of customer and employee behavior enables us to partner with you effectively. We're here to help you make confident strategic decisions, uncover hidden growth opportunities, adopt best operational practices, and ultimately, improve profitability.
+          Your success is our priority, and we're dedicated to helping you turn these challenges into a transformative journey towards sustainable growth.
+          `,
+        },
+        {
           title: 'Who are your typical clients?',
           description:
-            'Our typical clients are small to medium-sized businesses from a variety of sectors. We specialize in helping businesses that are in their growth phase, updating their business and marketing strategies, seeking digital transformation, or are looking to sell.',
+            'Our typical clients are small to medium-sized businesses from a variety of sectors. We specialize in helping businesses that are in a growth phase, need help updating their business processes or marketing strategies, are seeking digital transformation, or are looking to sell.',
         },
         {
           title: 'What is your approach to business consulting?',
           description:
             'Our approach is collaborative and focused on the unique needs of each client. We work closely with business owners and their teams to understand their goals, analyze their current operations, and recommend tailored solutions. We offer flexible services to meet the varying needs of our clients; we can provide expert guidance to steer your business towards success, or we can take the reins and execute on the strategic plans, giving you the freedom to focus on your core business operations or growth opportunities.',
-        },
-        {
-          title: 'Why should we hire Third Act?',
-          description: `Third Act understands that as a business owner, you're faced with a unique set of challenges that can feel overwhelming. We empathize with your struggle and are committed to providing you with a fresh perspective and expert insights to navigate these difficult times. Our cross-category experience, honed over decades, and our deep understanding of customer and employee behavior enables us to partner with you effectively. We're here to help you make confident strategic decisions, uncover hidden growth opportunities, adopt best operational practices, and ultimately improve profitability. Your success is our priority, and we're dedicated to helping you turn these challenges into a transformative journey towards sustainable growth.`,
         },
         {
           title: 'How do you measure the success of your consulting services?',
