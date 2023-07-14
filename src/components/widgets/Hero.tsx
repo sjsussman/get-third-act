@@ -20,15 +20,15 @@ const Hero = (props: { data: HeroProps }) => {
           {image && (
             <div className="hidden justify-center px-20 md:flex">
               <div className="flex-column mx-6 mb-6 grid content-around py-10 text-xl font-bold text-gray-600 dark:text-slate-400">
-                <p>
+                <p className="px-6 text-center">
                   We quickly clarify your goals, giving you the clear perspective, expertise, and tools to achive them.
                 </p>
-                <p>Maximize your company&apos;s financial potential with Third Act.</p>
+                <p className="px-6 text-center">Maximize your company&apos;s financial potential with Third Act.</p>
                 <div className="flex-col flex-nowrap gap-4 px-32 sm:flex-row sm:justify-center">
                   {callToAction && <CTA data={callToAction} />}
                 </div>
               </div>
-              <div className="relative m-auto mr-6 hidden max-w-[40%] md:block">
+              <div className="relative m-auto mr-6 hidden max-w-[50%] md:block">
                 <Image
                   src={image.src}
                   alt={image.alt}

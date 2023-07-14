@@ -375,7 +375,7 @@ export const serviceData: ServiceProps = {
     alt: 'man playing chess image',
   },
   callToAction: {
-    text: 'See Our Full Services',
+    text: 'See our full services',
     href: '/services',
     targetBlank: true,
     btnType: 'primary',
@@ -395,11 +395,11 @@ export const contactData: ContactProps = {
     title: 'Third Act can help.',
   },
   items: [
-    {
-      title: 'Contact Us',
-      description: ['(o) 914.391.4798', 'Mail: info@thirdact.com'],
-      icon: IconPhoneCall,
-    },
+    // {
+    //   title: 'Contact Us',
+    //   description: ['(o) 914.391.4798', 'Mail: info@thirdact.com'],
+    //   icon: IconPhoneCall,
+    // },
   ],
   form: {
     title: 'Ready to Get Started?',

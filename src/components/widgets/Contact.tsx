@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="flex items-stretch justify-center">
           <div className="grid md:grid-cols-2">
-            <div className="mt-[20%] h-full pr-6">
+            <div className="mt-[40%] h-full pr-6">
               <div className="align-start flex-col">
                 {header && <HeaderWidget header={header} titleClassname="text-3xl sm:text-5xl" />}
                 {header2 && <HeaderWidget header={header2} titleClassname="text-3xl sm:text-5xl" />}
